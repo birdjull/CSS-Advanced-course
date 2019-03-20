@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: birdjull
 github_username:  birdjull
-exclude: [_assets, node_modules, .gitignore, package.json, package-lock.json, Gemfile, Gemfile.lock, gulpfile.js]
+exclude: [_assets, node_modules, .gitignore, package.json, package-lock.json, Gemfile, Gemfile.lock, gulpfile.js, README.md]
 # Build settings
 markdown: kramdown
 plugins:
