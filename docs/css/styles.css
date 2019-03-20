@@ -1,3 +1,60 @@
+:root{
+    --color-main-bgrd: rgb(231, 161, 161);
+    --color-main-text: #FFF;
+
+    --sizing-ws-base: 1.5em;
+
+    --sizing-fs-base: 12px;
+    --sizing-fs-tablets: 14px;
+    --sizing-fs-laptops: 16px;
+    --sizing-fs-desktops: 18px;
+    --sizing-fs-huge: 20px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;   
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html{
+    font: var(--sizing-fs-base)/1.5 "Georgia", serif;
+}
+p, ul, ol, dl, table{
+    margin-bottom: var(--sizing-ws-base);
+}
+ul, ol{
+    padding-left: var(--sizing-ws-base);
+}
+h1, h2, h3{
+    margin: 0 0 calc( var(--sizing-ws-base)/3) 0;
+}
 body{
-    background: rgb(206, 46, 46);
+    background: var(--color-main-bgrd, #000);
+    color: var(--color-main-text, #FFF);
+    padding: 4em;
+}
+@media (min-width: 600px){
+    html{
+        font-size: var(--sizing-fs-tablets);
+    }
+}
+@media (min-width: 1260px){
+    html{
+        font-size: var(--sizing-fs-laptops);
+    }
+}
+@media (min-width: 1420px){
+    html{
+        font-size: var(--sizing-fs-desktops);
+    }
+}
+@media (min-width: 1600px){
+    html{
+        font-size: var(--sizing-fs-huge);
+    }
 }
