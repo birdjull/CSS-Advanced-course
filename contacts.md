@@ -2,5 +2,7 @@
 layout: page
 title: Contacts
 permalink: /contacts/
+body_class: page
 ---
 
+Contacts
