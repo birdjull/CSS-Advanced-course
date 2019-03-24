@@ -1,60 +1,20 @@
+
+
+@import url('typography.css');
+@import url('navigation.css');
+
+@import url('site-header.css');
+@import url('site-footer.css');
+
 :root{
     --color-main-bgrd: rgb(215, 175, 231);
     --color-main-text: #FFF;
+    --color-main-link: orange;
+}
 
-    --sizing-ws-base: 1.5em;
-
-    --sizing-fs-base: 12px;
-    --sizing-fs-tablets: 14px;
-    --sizing-fs-laptops: 16px;
-    --sizing-fs-desktops: 18px;
-    --sizing-fs-huge: 20px;
-    
-}
-*{
-    padding: 0;
-    margin: 0;   
-}
-html{
-    box-sizing: border-box;
-}
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-html{
-    font: var(--sizing-fs-base)/1.5 "Georgia", serif;
-}
-p, ul, ol, dl, table{
-    margin-bottom: var(--sizing-ws-base);
-}
-ul, ol{
-    padding-left: var(--sizing-ws-base);
-}
-h1, h2, h3{
-    margin: 0 0 calc( var(--sizing-ws-base)/3) 0;
-}
 body{
-    background: var(--color-main-bgrd, #000);
-    color: var(--color-main-text, #FFF);
-    padding: 4em;
+    background: #EEE;
+    padding: 2rem 4rem;
 }
-@media (min-width: 600px){
-    html{
-        font-size: var(--sizing-fs-tablets);
-    }
-}
-@media (min-width: 1260px){
-    html{
-        font-size: var(--sizing-fs-laptops);
-    }
-}
-@media (min-width: 1420px){
-    html{
-        font-size: var(--sizing-fs-desktops);
-    }
-}
-@media (min-width: 1600px){
-    html{
-        font-size: var(--sizing-fs-huge);
-    }
-}
+
+
