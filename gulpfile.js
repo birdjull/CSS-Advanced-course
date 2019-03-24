@@ -1,13 +1,13 @@
 "use strict";
 
-let gulp = require("gulp"),
-	autoprefixer = require("gulp-autoprefixer"),
-	exec = require("gulp-exec"),
+let gulp = require('gulp'),
+	autoprefixer = require('gulp-autoprefixer'),
+	exec = require('gulp-exec'),
 	browserSync = require('browser-sync').create(),
-	cp = require("child_process");
+	cp = require('child_process');
 ;
 
-gulp.task("css", function() {
+gulp.task('css', function() {
 	return gulp.src( '_assets/css/**/*.css' )
 		.pipe( autoprefixer() )
 		.pipe( gulp.dest( './docs/css/' ) )
@@ -16,15 +16,16 @@ gulp.task("css", function() {
 });
 
 // Jekyll
-gulp.task("jekyll", function() {
-	return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit" , shell: "true" });
+
+gulp.task('jekyll', function() {
+	return cp.spawn('bundle', ['jekyll', 'exec' , 'build'], { stdio: 'inherit' , shell: 'true' });
 });
 
-gulp.task("watch", function() {
+gulp.task('watch', function() {
 
 	browserSync.init({
 		server: {
-            baseDir: "./docs/"
+            baseDir: './docs/'
 		}
 	});
 
@@ -32,10 +33,10 @@ gulp.task("watch", function() {
 
 	gulp.watch(
 		[
-			"./*.html",
-			"./_includes/*.html",
-			"./_layouts/*.html",
-			"./_posts/**/*.*"
+			'./*.html',
+			'./_includes/*.html',
+			'./_layouts/*.html',
+			'./_posts/**/*.*'
 		]
 	).on('change', gulp.series('jekyll', 'css') );
 
@@ -44,4 +45,4 @@ gulp.task("watch", function() {
 
 });
 
-gulp.task("default", gulp.series('css','watch'));
+gulp.task('default', gulp.series('css','watch'));

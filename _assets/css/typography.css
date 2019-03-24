@@ -30,12 +30,8 @@ ul, ol{
 h1, h2, h3{
     margin: 0 0 calc( var(--sizing-ws-base)/3) 0;
 }
-/* body{
-    background: var(--color-main-bgrd, #000);
-    color: var(--color-main-text, #FFF);
-    padding: 2em;
-} */
-/* @media (min-width: 600px){
+
+@media (min-width: 600px){
     html{
         font-size: var(--sizing-fs-tablets);
     }
@@ -54,4 +50,4 @@ h1, h2, h3{
     html{
         font-size: var(--sizing-fs-huge);
     }
-} */
+}

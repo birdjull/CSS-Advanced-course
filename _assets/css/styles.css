@@ -7,14 +7,17 @@
 @import url('site-footer.css');
 
 :root{
-    --color-main-bgrd: rgb(215, 175, 231);
+    --color-main-bgrd: rgb(201, 187, 207);
     --color-main-text: #FFF;
-    --color-main-link: orange;
+    --color-main-link: rgb(0, 4, 255);
 }
 
 body{
-    background: #EEE;
-    padding: 2rem 4rem;
+    background: var(--color-main-bgrd);
+    padding: 2rem 3rem;
+}
+.site-content{
+    padding: 2rem 0;
 }
 
 
