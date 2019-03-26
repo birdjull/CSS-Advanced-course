@@ -21,5 +21,9 @@
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-exec": "^3.0.2"
+  },
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "cssnano": "^4.1.10"
   }
 }
