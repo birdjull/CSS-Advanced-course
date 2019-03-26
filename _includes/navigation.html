@@ -1,7 +1,7 @@
 <nav class="main-nav"> 
     <ul>
-        
-        {% for page in site.pages  | sort: 'order'%}
+        {% assign pages_list = site.pages | sort: 'order' %}
+        {% for page in pages_list %}
         {% if page.url != '/feed.xml' and page.url != '/' %} 
         
         <li>
